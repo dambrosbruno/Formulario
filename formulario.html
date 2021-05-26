@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    
+    <div>
+        <h1 id= "titulo"> Formulário</h1>
+        <p id="subtitulo"> Complete o formulário</p>
+    </div>
+
+    <form action="formulario">
+
+        <fieldset class="grupo">
+          
+            <Fieldset>
+
+                <div class="campo">
+                    <h2>Dados pessoais</h2>
+                </div>
+
+                <div class="campo"> 
+                    <label for="Nome"><b>Nome</b></label>
+                    <input type="text" Nome="Nome" id="Nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Sobrenome"> <b>Sobrenome</b></label>
+                    <input type="text" Sobrenome="Sobrenome" id="Sobrenome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Email"><b>Email</b></label>
+                    <input type="email" nome="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Gênero"><b>Gênero</b></label>
+                    <label>
+                        <input type="radio" name="masculino" value="masculino" required> masculino
+                    </label>
+
+                    <label>
+                        <input type="radio" name="feminino" value="feminino" required> feminino
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label><b>Estado de nascimento</b></label>
+                    <select name="estado">
+                        <option selected="" value="">Selecione o Estado (UF)</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select> 
+                </div>
+
+                <div class="campo">
+                    <label for=""><b>Cidade de nascimento</b></label>
+                    <input type="text" cidade="cidade" id="cidade">
+                </div>
+
+                <div class="campo">
+                    <label for=""><b>Data de nascimento</b></label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+            
+            </Fieldset>
+
+            <fieldset>
+
+                <div class="campo">
+                    <h2>Informações fenotípicas</h2>
+                </div>
+
+                <div class="campo">
+                    <label for="sangue"><b>Tipo Sanguíneo</b></label>
+                    <select name="sangue" id="sangue">Tipo Sanguíneo
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-/option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for=""><b>Altura (cm)</b></label>
+                    <input type="number" name="altura" id="altura">
+                </div>
+
+                <div class="campo">
+                    <label for=""><b>Peso (kg)</b></label>
+                    <input type="number" name="peso" id="peso">
+                </div>
+
+                <div class="campo">
+                    <label for=""><b>Cor dos olhos (Escala de Martin-Schultz)</b></label>
+                    <select name="olhos" id="olhos">
+                        <option value="1">íris azul clara</option>
+                        <option value="2">íris azul esverdeada</option>
+                        <option value="3">íris cinza</option>
+                        <option value="4">íris azul escura</option>
+                        <option value="5">íris azul-cinza</option>
+                        <option value="6">íris cinza-verde</option>
+                        <option value="7">íris verde</option>
+                        <option value="8-9">íris verde-marrom</option>
+                        <option value="10-13">íris verde-amarela</option>
+                        <option value="14">íris âmbar</option>
+                        <option value="15">íris castanho-clara</option>
+                        <option value="16">íris castanho-escura</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for=""><b> Cor da pele (Escala de Luschan)</b></label>
+                    <select name="pele" id="pele">
+                        <option value="I">1-5 (muito claro)</option>
+                        <option value="II">6-10 (claro)</option>
+                        <option value="III">11-15 (intermediário)</option>
+                        <option value="IV">16-20 (mediterrânea)</option>
+                        <option value="V">21-28 (escura)</option>
+                        <option value="VI">29-36 (muito escura)</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+        </fieldset>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+</body>
+
+</html>
